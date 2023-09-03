@@ -1,0 +1,20 @@
+crud:
+  appUsername: otususer
+  appPassword: otususer
+  appDatabase: otusdb
+  appDbUrl: jdbc:postgresql://postgres-service:5432/otusdb
+service:
+  name: &serviceName crud-service
+  port: &servicePort 8001
+  type: ClusterIP
+ingress:
+  enabled: true
+  tls: false
+  rules:
+  - host: arch.homework
+    http:
+      paths:
+      - path: /otusapp2/aboldyrev($|/)(.*)
+        service:
+          name: *serviceName
+          port: *servicePort

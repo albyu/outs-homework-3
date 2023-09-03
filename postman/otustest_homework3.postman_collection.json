@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "4dacddfc-f0eb-4824-9a53-274dc275edf9",
+		"name": "otustest_homework3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28975247",
+		"_collection_link": "https://blue-equinox-580131.postman.co/workspace/otustest~cdb3636e-857b-4491-a072-3c16c5c1baaf/collection/28975247-4dacddfc-f0eb-4824-9a53-274dc275edf9?action=share&creator=28975247&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Create_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"albyu\",\r\n  \"firstName\": \"Alexey\",\r\n  \"lastName\": \"Boldyrev\",\r\n  \"email\": \"albyu@mail.ru\",\r\n  \"phone\": \"+7904*******\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arch.homework/otusapp2/aboldyrev/user",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"otusapp2",
+						"aboldyrev",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health_test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arch.homework/otusapp2/aboldyrev/health",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"otusapp2",
+						"aboldyrev",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arch.homework/otusapp2/aboldyrev/user/1",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"otusapp2",
+						"aboldyrev",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\": \"+1211*******\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arch.homework/otusapp2/aboldyrev/user/1",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"otusapp2",
+						"aboldyrev",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_user_not_exists",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\": \"+1211*******\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arch.homework/otusapp2/aboldyrev/user/101",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"otusapp2",
+						"aboldyrev",
+						"user",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://arch.homework/otusapp2/aboldyrev/user/1",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"otusapp2",
+						"aboldyrev",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_user_not_exists",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://arch.homework/otusapp2/aboldyrev/user/102",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"otusapp2",
+						"aboldyrev",
+						"user",
+						"102"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_user_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"galina\",\r\n  \"firstName\": \"Galina\",\r\n  \"lastName\": \"Boldyreva\",\r\n  \"email\": \"galina@yandex.ru\",\r\n  \"phone\": \"+7905*******\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://arch.homework/otusapp2/aboldyrev/user",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"otusapp2",
+						"aboldyrev",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_user_2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arch.homework/otusapp2/aboldyrev/user/2",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"otusapp2",
+						"aboldyrev",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_user_not_exists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://arch.homework/otusapp2/aboldyrev/user/204",
+					"protocol": "http",
+					"host": [
+						"arch",
+						"homework"
+					],
+					"path": [
+						"otusapp2",
+						"aboldyrev",
+						"user",
+						"204"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

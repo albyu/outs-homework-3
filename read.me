@@ -1,0 +1,12 @@
+1. Домашнее задание состоит из 2 helm charts: для БД Postgres и приложения, реализующего модель CRUD во взаимодействии с этой БД
+
+2. Установка Postgres:
+   helm install ./postgres --debug --generate-name 
+
+3. Установка CRUD application:
+   helm install ./crud --debug --generate-name
+
+4. Коллекция тестов для Postman здесь:
+   postman\otustest_homework3.postman_collection.json 
+   
+   Из-за особенностей интерфейса, тест-кейсы не идемпотентны (GET, PUT и DELETE в качестве аргумента получают Id записи, а POST нет, запись, созданная в новом цикле будет с новым Id).
