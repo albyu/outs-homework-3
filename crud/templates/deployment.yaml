@@ -14,7 +14,7 @@ spec:
     spec:
       containers: 
         - name: crud-app
-          image: aboldyrev1111/otushomework:v3
+          image: aboldyrev1111/otushomework:v4
           #env
           env:
           - name: POSTGRES_APP_USER

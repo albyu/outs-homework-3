@@ -16,3 +16,15 @@ data:
       jpa:
         hibernate:
           ddl-auto: update
+    management:
+      endpoint:
+        metrics:
+          enabled: true
+      endpoints:
+        web:
+          exposure:
+            include: health, info, prometheus
+      metrics:
+        export:
+          prometheus:
+            enabled: true  
