@@ -8,6 +8,7 @@ spec:
     app: crud
   ports:
     - protocol: TCP
+      name: web
       port: {{.Values.service.port}}
       targetPort: {{.Values.service.port}} 
   type: {{.Values.service.type}} 
