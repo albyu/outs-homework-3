@@ -5,6 +5,7 @@ metadata:
 spec:
   selector:
     app: {{ include "crud.fullname" . }}
+    app: crud
   ports:
     - protocol: TCP
       port: {{.Values.service.port}}
